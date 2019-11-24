@@ -44,7 +44,7 @@ public:
             return r;
         }
     }
-    void ULA(){
+    void Instrucoes(){
         long int op, funct;
         int aux = 0;
 
@@ -71,7 +71,7 @@ public:
                         cin >> ix;
                         cout << endl;
 
-                        if(ix == 8){x = &t[0];}  if(ix == 9){x = &t[1];}  if(ix == 10){x = &t[2];}
+                        if(ix == 8){x = &t[0];}   if(ix == 9){x = &t[1];}   if(ix == 10){x = &t[2];}
                         if(ix == 11){x = &t[3];}  if(ix == 12){x = &t[4];}  if(ix == 13){x = &t[5];}
                         if(ix == 14){x = &t[6];}  if(ix == 15){x = &t[7];}  if(ix == 16){x = &s[0];}
                         if(ix == 17){x = &s[1];}  if(ix == 18){x = &s[2];}  if(ix == 19){ x = &s[3];}
@@ -91,8 +91,8 @@ public:
                         cin >> iy;
                         cout << endl;
 
-                        if(iy == 0){y = &zero;}  if(iy == 8){y = &t[0];}  if(iy == 9){y = &t[1];}
-                        if(iy == 10){y = &t[2];} if(iy == 11){y = &t[3];}  if(iy == 12){y = &t[4];}
+                        if(iy == 0){y = &zero;}   if(iy == 8){y = &t[0];}   if(iy == 9){y = &t[1];}
+                        if(iy == 10){y = &t[2];}  if(iy == 11){y = &t[3];}  if(iy == 12){y = &t[4];}
                         if(iy == 13){y = &t[5];}  if(iy == 14){y = &t[6];}  if(iy == 15){y = &t[7];}
                         if(iy == 16){y = &s[0];}  if(iy == 17){y = &s[1];}  if(iy == 18){y = &s[2];}
                         if(iy == 19){y = &s[3];}  if(iy == 20){y = &s[4];}  if(iy == 21){y = &s[5];}
@@ -131,7 +131,7 @@ public:
                         cin >> ix;
                         cout << endl;
 
-                        if(ix == 8){x = &t[0];}  if(ix == 9){x = &t[1];}  if(ix == 10){x = &t[2];}
+                        if(ix == 8){x = &t[0];}   if(ix == 9){x = &t[1];}   if(ix == 10){x = &t[2];}
                         if(ix == 11){x = &t[3];}  if(ix == 12){x = &t[4];}  if(ix == 13){x = &t[5];}
                         if(ix == 14){x = &t[6];}  if(ix == 15){x = &t[7];}  if(ix == 16){x = &s[0];}
                         if(ix == 17){x = &s[1];}  if(ix == 18){x = &s[2];}  if(ix == 19){ x = &s[3];}
@@ -151,8 +151,8 @@ public:
                         cin >> iy;
                         cout << endl;
 
-                        if(iy == 0){y = &zero;}  if(iy == 8){y = &t[0];}  if(iy == 9){y = &t[1];}
-                        if(iy == 10){y = &t[2];} if(iy == 11){y = &t[3];}  if(iy == 12){y = &t[4];}
+                        if(iy == 0){y = &zero;}   if(iy == 8){y = &t[0];}   if(iy == 9){y = &t[1];}
+                        if(iy == 10){y = &t[2];}  if(iy == 11){y = &t[3];}  if(iy == 12){y = &t[4];}
                         if(iy == 13){y = &t[5];}  if(iy == 14){y = &t[6];}  if(iy == 15){y = &t[7];}
                         if(iy == 16){y = &s[0];}  if(iy == 17){y = &s[1];}  if(iy == 18){y = &s[2];}
                         if(iy == 19){y = &s[3];}  if(iy == 20){y = &s[4];}  if(iy == 21){y = &s[5];}
@@ -173,8 +173,8 @@ public:
                         cin >> iz;
                         cout << endl;
 
-                        if(iz == 0){z = &zero;}  if(iz == 8){z = &t[0];}  if(iz == 9){z = &t[1];}
-                        if(iz == 10){z = &t[2];} if(iz == 11){z = &t[3];}  if(iz == 12){z = &t[4];}
+                        if(iz == 0){z = &zero;}   if(iz == 8){z = &t[0];}   if(iz == 9){z = &t[1];}
+                        if(iz == 10){z = &t[2];}  if(iz == 11){z = &t[3];}  if(iz == 12){z = &t[4];}
                         if(iz == 13){z = &t[5];}  if(iz == 14){z = &t[6];}  if(iz == 15){z = &t[7];}
                         if(iz == 16){z = &s[0];}  if(iz == 17){z = &s[1];}  if(iz == 18){z = &s[2];}
                         if(iz == 19){z = &s[3];}  if(iz == 20){z = &s[4];}  if(iz == 21){z = &s[5];}
@@ -204,8 +204,6 @@ public:
                     pc = pc + 4;
             }
 
-
-
             if(op != 0 && op != 8){
                 aux = 0;
             }
@@ -221,7 +219,7 @@ int main()
 
 
     do{
-        a.ULA();
+        a.Instrucoes();
 
         cout << "---------------------------------------------------" << endl;
         system("pause");
@@ -243,8 +241,6 @@ int main()
 
     do{
 
-
-
         do{
             cout << "Se deseja checar um registrador insira o codigo:\n1 - checar\n0 - finalizar" << endl << endl;
             cout << "Codigo: ";
@@ -260,10 +256,6 @@ int main()
             cout << "---------------------------------------------------" << endl << endl;
         }
        }while(qtd != 0);
-
-
-
-
 
     return 0;
 }
